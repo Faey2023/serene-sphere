@@ -1,10 +1,9 @@
+import SearchBar from "./SearchBar";
+
 const Home = () => {
   return (
-    <div>
-      <h1>
-      homepage
-      </h1>
-     
+    <div className="space-y-5">
+      <SearchBar />
     </div>
   );
 };

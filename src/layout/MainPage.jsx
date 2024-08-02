@@ -31,7 +31,7 @@ const MainPage = () => {
   }, [isSidebarOpen]);
 
   return (
-    <div className="relative flex">
+    <div className="relative flex bg-cream">
       <div className="lg:hidden">
         <button
           className="fixed z-50 top-5 right-5 text-3xl text-black"
@@ -44,7 +44,7 @@ const MainPage = () => {
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
       <div
-        className={`flex-1 transition-filter duration-300 ml-10 ${
+        className={`flex-1 transition-filter duration-300 ${
           isSidebarOpen ? "blur-sm" : "blur-none"
         }`}
       >
