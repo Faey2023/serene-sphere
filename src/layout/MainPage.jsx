@@ -1,12 +1,19 @@
 import { Outlet } from "react-router-dom";
+import Sidebar from "../components/Home/Sidebar";
 
 const MainPage = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl">Hello World!</h1>
-      <h1 className="text-center text-3xl font-semibold">Hello World!</h1>
-      <h1 className="text-center text-3xl font-bold">Hello World!</h1>
-      <Outlet />
+      <div className="flex">
+        <div className="h-screen fixed z-[99999] shadow-xl">
+          <div className="hidden lg:flex flex-col max-w-64 mx-auto">
+            <Sidebar />
+          </div>
+        </div>
+        <div className="md:ml-56">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };
