@@ -1,6 +1,6 @@
 const SearchBar = () => {
   return (
-    <div className="bg-[#FFFFFF] rounded-[10px] flex justify-between flex-col md:flex-row p-10 m-5 md:m-10">
+    <div className="bg-white rounded-[10px] flex justify-between flex-col md:flex-row p-10">
       <div className="space-y-5">
         <h1 className="text-xs md:text-xl font-medium">
           I&#39;m Looking for Massage Therapist Near...

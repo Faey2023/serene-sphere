@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dr. Maria Gonzalez",
+    "image": "https://i.ibb.co/7C4g0BS/image-116-3.png",
+    "location": "Los Angeles, CA",
+    "therapyPlace": "In Studio"
+  },
+  {
+    "name": "Dr. Christopher Wilson",
+    "image": "https://i.ibb.co/nmzcTy2/image-116-2.png",
+    "location": "Denver, CO",
+    "therapyPlace": "Mobile"
+  },
+  {
+    "name": "Dr. Jason Lee",
+    "image": "https://i.ibb.co/XbmdQV6/image-116-1.png",
+    "location": "Boston, MA",
+    "therapyPlace": "In Studio"
+  },
+  {
+    "name": "Dr. Robert Martinez",
+    "image": "https://i.ibb.co/sRFcdq0/image-116.png",
+    "location": "Austin, TX",
+    "therapyPlace": "Mobile"
+  }
+]
