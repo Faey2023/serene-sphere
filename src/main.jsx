@@ -4,8 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./components/Home/Home";
 import MainPage from "./layout/MainPage";
-import Register from "./components/Registration/Register";
-import Login from "./components/Registration/Login";
+import AuthProvider from "./Provider/AuthProvider";
+import Register from "./components/Authentication/Registration/Register";
+import Login from "./components/Authentication/Login/Login";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <Toaster />
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
