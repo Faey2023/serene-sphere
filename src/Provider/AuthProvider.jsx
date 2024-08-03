@@ -10,6 +10,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.console";
+import toast from "react-hot-toast";
 
 const googleProvider = new GoogleAuthProvider(auth);
 
@@ -51,6 +52,10 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
+  const facebookLogin = () => {
+    toast.error("Featured not added yet!");
+  };
+
   const logOut = () => {
     signOut(auth);
   };
@@ -62,6 +67,7 @@ const AuthProvider = ({ children }) => {
     login,
     profile,
     googleLogin,
+    facebookLogin,
     logOut,
   };
   return (
