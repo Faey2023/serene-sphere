@@ -11,7 +11,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         isOpen ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 lg:translate-x-0 w-48 lg:relative lg:top-auto lg:right-auto lg:h-auto`}
     >
-      <nav className="flex flex-col gap-3 text-center py-5 h-screen border-r border-r-[#E7E7E7]">
+      <nav className="flex flex-col gap-3 text-center py-5 h-screen border-r border-r-lightGray">
         <h1 className="text-[#4285F3] text-4xl p-5 uppercase">Logo</h1>
         <Link
           to="/"
@@ -53,7 +53,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <CiHeart />
           Favorites
         </Link>
-        <hr className="text-[#E7E7E7]" />
+        <hr className="text-lightGray" />
         <Link
           to="/help"
           className="text-base hover:bg-lightBlue text-gray hover:text-black hover:font-medium p-2 inline-flex gap-2 items-center hover:border-l-[3px] hover:border-[#102C4A]"

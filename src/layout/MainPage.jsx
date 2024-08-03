@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Home/Sidebar";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import Sidebar from "../components/Home/shared/Sidebar";
 
 const MainPage = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);

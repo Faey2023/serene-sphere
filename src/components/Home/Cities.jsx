@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const Cities = () => {
   const [cities, setCities] = useState([]);
   useEffect(() => {
-    fetch("../../../public/cities.json")
+    fetch("/cities.json")
       .then((res) => res.json())
       .then((data) => setCities(data.name));
   }, []);
@@ -15,7 +15,7 @@ const Cities = () => {
         <div className="grid grid-cols-3 gap-5">
           {cities.map((city, index) => (
             <div key={index} className="w-full">
-              <p className="text-blue underline border-b border-[#E7E7E7] pb-2">
+              <p className="text-blue underline border-b border-lightGray pb-2">
                 {city}
               </p>
             </div>

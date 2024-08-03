@@ -1,0 +1,44 @@
+[
+  {
+    "doctor": "Dr. John Smith",
+    "image": "https://i.ibb.co/khtpyqY/image-116-5.png",
+    "location": "New York, NY",
+    "review": "Dr. Smith has been incredibly helpful in my therapy journey. His approach is compassionate and insightful.",
+    "title": "Cognitive Behavioral Therapy"
+  },
+  {
+    "doctor": "Dr. Jane Doe",
+    "image": "https://i.ibb.co/tq67Lnf/image-116-4.png",
+    "location": "Los Angeles, CA",
+    "review": "Dr. Doe is an exceptional therapist. She helped me navigate through difficult times with great care.",
+    "title": "Psychodynamic Therapy"
+  },
+  {
+    "doctor": "Dr. Emily Davis",
+    "image": "https://i.ibb.co/khtpyqY/image-116-5.png",
+    "location": "Chicago, IL",
+    "review": "Dr. Davis provides a safe and welcoming environment. Her expertise has greatly improved my mental health.",
+    "title": "Humanistic Therapy"
+  },
+  {
+    "doctor": "Dr. Michael Brown",
+    "image": "https://i.ibb.co/tq67Lnf/image-116-4.png",
+    "location": "Houston, TX",
+    "review": "Dr. Brown's therapy sessions have been transformative for me. He listens and offers valuable insights.",
+    "title": "Behavioral Therapy"
+  },
+  {
+    "doctor": "Dr. Sarah Wilson",
+    "image": "https://i.ibb.co/khtpyqY/image-116-5.png",
+    "location": "Phoenix, AZ",
+    "review": "Dr. Wilson is an outstanding therapist. Her guidance has been instrumental in my personal growth.",
+    "title": "Integrative Therapy"
+  },
+  {
+    "doctor": "Dr. Robert Martinez",
+    "image": "https://i.ibb.co/tq67Lnf/image-116-4.png",
+    "location": "Philadelphia, PA",
+    "review": "Dr. Martinez's empathetic approach has made a significant difference in my life. I highly recommend him.",
+    "title": "Existential Therapy"
+  }
+]
