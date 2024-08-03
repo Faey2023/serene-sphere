@@ -1,6 +1,6 @@
 const Register = () => {
   return (
-    <div className="flex justify-between gap-5 py-7 px-40 h-[100vh]">
+    <div className="flex justify-between gap-10 py-10 px-28 h-[100vh]">
       <div className="space-y-3 max-w-md">
         <h1>LOGO</h1>
         <h1 className="text-3xl font-semibold">Sign In To Your Account</h1>
@@ -10,12 +10,12 @@ const Register = () => {
           <span className="text-blue">Privacy and Policy</span>
         </p>
 
-        <form className="">
+        <form>
           <div className="mb-3">
             <label className="block mb-2 text-sm font-medium">Name</label>
             <input
-              type="email"
-              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-[#E7E7E7] border border-[#E7E7E7]"
+              type="name"
+              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-lightGray border border-lightGray"
               placeholder="@username"
               required
             />
@@ -24,7 +24,7 @@ const Register = () => {
             <label className="block mb-2 text-sm font-medium">Email</label>
             <input
               type="email"
-              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-[#E7E7E7] border border-[#E7E7E7]"
+              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-lightGray border border-lightGray"
               placeholder="Enter your email"
               required
             />
@@ -32,19 +32,19 @@ const Register = () => {
           <div className="mb-3">
             <label className="block mb-2 text-sm font-medium">Password</label>
             <input
-              type="email"
-              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-[#E7E7E7] border border-[#E7E7E7]"
+              type="password"
+              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-lightGray border border-lightGray"
               placeholder="Enter your password"
               required
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium">
+            <label className="block mb-2 text-sm font-medium">
               Confirm Password
             </label>
             <input
-              type="email"
-              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-[#E7E7E7] border border-[#E7E7E7]"
+              type="password"
+              className="w-full p-4 ps-5 text-sm text-gray-900 rounded-lg outline-lightGray border border-lightGray"
               placeholder="Re-type password"
               required
             />
@@ -59,7 +59,7 @@ const Register = () => {
                 required
               />
             </div>
-            <label htmlFor="remember" className="ms-2 text-sm text-[#4285F3]">
+            <label className="ms-2 text-sm text-[#4285F3]">
               Accept Terms of Service
             </label>
           </div>
@@ -79,7 +79,18 @@ const Register = () => {
           </div>
         </form>
       </div>
-      <img src="https://i.ibb.co/B6TxdZk/Group-1000001745.png" alt="" />
+      <div
+        className="h-[100vh] w-full bg-cover bg-center rounded-xl flex justify-center items-center"
+        style={{
+          backgroundImage:
+            "url('https://i.ibb.co/B6TxdZk/Group-1000001745.png')",
+        }}
+      >
+        <div className="inset-0 flex flex-col items-center justify-center bg-[#152A16] bg-opacity-70 h-36 rounded-xl p-5 text-[22px]">
+          <h1 className="text-blue font-semibold">Create Account</h1>
+          <h1 className="text-white font-medium">Fill in Your Information</h1>
+        </div>
+      </div>
     </div>
   );
 };
