@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useAuth } from "../../../custom hooks/useAuth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa";
 
@@ -120,9 +120,12 @@ const Form = () => {
             </button>
             <p className="text-xs md:text-base">
               Don’t Have an Account?{" "}
-              <span className="text-[#156BCA] font-medium underline">
+              <Link
+                to="/register"
+                className="text-[#156BCA] font-medium underline cursor-pointer"
+              >
                 Create Account
-              </span>
+              </Link>
             </p>
           </div>
         </form>

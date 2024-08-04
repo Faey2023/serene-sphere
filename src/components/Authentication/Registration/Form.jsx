@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useAuth } from "../../../custom hooks/useAuth";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const { createUser, profile } = useAuth();
@@ -116,7 +117,12 @@ const Form = () => {
         </button>
         <p>
           Already Have an Account?{" "}
-          <span className="text-[#156BCA] font-medium underline">Log in</span>
+          <Link
+            to="/login"
+            className="text-[#156BCA] font-medium underline cursor-pointer"
+          >
+            Log in
+          </Link>
         </p>
       </div>
     </form>

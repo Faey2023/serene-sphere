@@ -8,11 +8,16 @@ import AuthProvider from "./Provider/AuthProvider";
 import Register from "./components/Authentication/Registration/Register";
 import Login from "./components/Authentication/Login/Login";
 import { Toaster } from "react-hot-toast";
+import Private from "./Provider/Private";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPage />,
+    element: (
+      <Private>
+        <MainPage />
+      </Private>
+    ),
     children: [
       {
         path: "/",
@@ -21,7 +26,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/regi",
+    path: "/register",
     element: <Register />,
   },
   {
@@ -32,9 +37,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-      <AuthProvider>
-        <Toaster />
-        <RouterProvider router={router} />
-      </AuthProvider>
+    <AuthProvider>
+      <Toaster />
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
