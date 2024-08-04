@@ -31,7 +31,7 @@ const MainPage = () => {
   }, [isSidebarOpen]);
 
   return (
-    <div className="relative flex bg-cream">
+    <div className="relative flex bg-cream container">
       <div className="lg:hidden">
         <button
           className="fixed z-50 top-5 right-5 text-3xl text-black"

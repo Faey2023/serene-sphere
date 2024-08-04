@@ -34,7 +34,9 @@ const SearchBar = () => {
           </div>
         </form>
       </div>
-      <img src="https://i.ibb.co/pWrf6YP/Group-1000001700.pngs" alt="" />
+      <div>
+        <img src="https://i.ibb.co/pWrf6YP/Group-1000001700.pngs" alt="" />
+      </div>
     </div>
   );
 };
