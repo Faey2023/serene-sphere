@@ -97,10 +97,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       } transition-transform duration-300 lg:translate-x-0 w-48 lg:relative lg:top-auto lg:right-auto lg:h-auto`}
     >
       <nav className="flex flex-col gap-3 text-center py-5 h-screen border-r border-r-lightGray">
-        <h1 className="text-[#4285F3] text-4xl p-5 uppercase hidden md:flex">
-          Logo
+        <h1 className="text-[#4285F3] text-xl  text-center px-3 my-5 uppercase hidden md:flex italic font-semibold">
+          Serene Sphere
         </h1>
-
         {/* Top Nav content for smaller screens */}
         <div className="lg:hidden bg-white w-full p-5 flex flex-col gap-5">
           <div className="flex flex-col gap-2 justify-center items-center">

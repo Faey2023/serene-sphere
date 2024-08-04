@@ -1,31 +1,3 @@
-// import { useEffect, useState } from "react";
-// import Card from "./Card";
-
-// const Featured = () => {
-//   const [therapist, setTherapist] = useState([]);
-
-//   useEffect(() => {
-//     fetch("/featured.json")
-//       .then((res) => res.json())
-//       .then((data) => setTherapist(data));
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1 className="text-lg font-medium my-3">Featured Therapist</h1>
-//       <div className="bg-white p-10 rounded-[10px]">
-//         <div className="flex gap-5">
-//           {therapist.map((therapy, index) => (
-//             <Card key={index} therapy={therapy} />
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Featured;
-
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Card from "./Card";
@@ -42,13 +14,13 @@ const Featured = () => {
       .then((data) => setTherapist(data));
   }, []);
 
-  // buttons
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
       <button
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-lightBlue hover:bg-blue hover:text-white p-2 rounded-full shadow-lg"
         onClick={onClick}
+        style={{ zIndex: 1 }}
       >
         <FaChevronLeft />
       </button>
@@ -59,8 +31,9 @@ const Featured = () => {
     const { onClick } = props;
     return (
       <button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-lightBlue hover:bg-blue hover:text-white p-2 rounded-full shadow-lg"
         onClick={onClick}
+        style={{ zIndex: 1 }}
       >
         <FaChevronRight />
       </button>
@@ -76,7 +49,6 @@ const Featured = () => {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -87,7 +59,7 @@ const Featured = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
@@ -96,18 +68,21 @@ const Featured = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          centerMode: true,
         },
       },
     ],
   };
 
   return (
-    <div>
-      <h1 className="text-lg font-medium my-3">Featured Therapist</h1>
-      <div className="bg-white p-5 rounded-[10px] w-full overflow-hidden">
+    <div className="relative w-full md:max-w-[1100px] mx-auto">
+      <h1 className="text-lg font-medium my-3">Featured Therapists</h1>
+      <div className="bg-white px-4 md:px-7 py-5 md:py-10 rounded-[10px] relative">
         <Slider {...settings}>
           {therapist.map((therapy, index) => (
-            <Card key={index} therapy={therapy} />
+            <div key={index} className="px-2">
+              <Card therapy={therapy} />
+            </div>
           ))}
         </Slider>
       </div>

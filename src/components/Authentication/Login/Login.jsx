@@ -63,7 +63,6 @@ const Login = () => {
               className="mt-4 text-red-500"
               onClick={() => setShowForm(false)}
             >
-              Close
             </button>
           </div>
         </div>
